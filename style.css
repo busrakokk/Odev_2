@@ -1,0 +1,67 @@
+/* Add your styles here */
+#baslik{
+    text-align: center;
+    background-color: gainsboro;
+    font-family: 'Times New Roman', Times, serif;
+    border: 3px solid purple;
+    border-radius:5px;
+  }
+  button{
+    background-color: rgb(134, 134, 254);
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  body{
+    background-color: rgb(247, 232, 255);
+  }
+
+  .section{
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap; /*resimlerin bir alt satıra kaydırılması sağlanır.*/ 
+    justify-content: center; /*tanımlanan bölüm içerisinde ortalayarak yerleştirme yapılmayı sağlar.*/
+    width: 90%; 
+  }
+  
+  img{
+    width: 300px;
+    margin: 10px;
+    height: 300px;
+    border-radius:10px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(69, 74, 237, 0.873);
+    object-fit: cover; /*En/boy oranını korurken kutuya doldurmak için duruma göre resmin boyutunu artırır veya azaltır.*/
+  }
+  img:hover {
+    transform: scale(1.2); /* Mouse üzerine gelindiğinde resmi büyütme animasyonu */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: rgb(206, 174, 249);
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom:10px;
+}
+
+nav a {
+  color: black;
+  text-decoration: underline;
+  margin: 0 15px;
+  font-size: 20px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: rgb(179, 63, 179); /* Rengi değiştirmek için örnek bir renk */
+}
+
+footer {
+  text-align: center;
+  padding: 5px;
+  background-color: black;
+  color:white;
+}
